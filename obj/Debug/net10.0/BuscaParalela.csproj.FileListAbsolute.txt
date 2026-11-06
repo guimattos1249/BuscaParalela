@@ -1,0 +1,17 @@
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.GeneratedMSBuildEditorConfig.editorconfig
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.AssemblyInfoInputs.cache
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.AssemblyInfo.cs
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.csproj.CoreCompileInputs.cache
+C:\www\BuscaParalela\bin\Debug\net10.0\resources\20260901.txt
+C:\www\BuscaParalela\bin\Debug\net10.0\resources\20261001.txt
+C:\www\BuscaParalela\bin\Debug\net10.0\resources\20261101.txt
+C:\www\BuscaParalela\bin\Debug\net10.0\BuscaParalela.exe
+C:\www\BuscaParalela\bin\Debug\net10.0\BuscaParalela.deps.json
+C:\www\BuscaParalela\bin\Debug\net10.0\BuscaParalela.runtimeconfig.json
+C:\www\BuscaParalela\bin\Debug\net10.0\BuscaParalela.dll
+C:\www\BuscaParalela\bin\Debug\net10.0\BuscaParalela.pdb
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.dll
+C:\www\BuscaParalela\obj\Debug\net10.0\refint\BuscaParalela.dll
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.pdb
+C:\www\BuscaParalela\obj\Debug\net10.0\BuscaParalela.genruntimeconfig.cache
+C:\www\BuscaParalela\obj\Debug\net10.0\ref\BuscaParalela.dll
