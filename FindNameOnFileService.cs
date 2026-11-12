@@ -12,6 +12,9 @@ public class FindNameOnFileService
 
     public async Task ExecuteAsync(int maxDegreeOfParalelism, CancellationToken ct)
     {
+        if (maxDegreeOfParalelism < 1)
+            throw new ArgumentOutOfRangeException(nameof(maxDegreeOfParalelism), "O Paralelismo não pode ser menor que 1.");
+
         var parallelOptions = new ParallelOptions
         { 
             MaxDegreeOfParallelism = maxDegreeOfParalelism, 
