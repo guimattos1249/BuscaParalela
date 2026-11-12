@@ -11,13 +11,13 @@ if (!Directory.Exists(folder))
     return;
 }
 
-IEnumerable<string> files =
-    Directory.EnumerateFiles(folder, "*.txt");
+List<string> files =
+    [.. Directory.EnumerateFiles(folder, "*.txt")];
 
 Console.WriteLine("Digite o Nome a ser procurado:");
 string name = Console.ReadLine()!;
 
-if (!files.Any() || string.IsNullOrWhiteSpace(name))
+if (files.Count == 0 || string.IsNullOrWhiteSpace(name))
 {
     Console.WriteLine("Diretório vazio ou nome inválido.");
     return;
