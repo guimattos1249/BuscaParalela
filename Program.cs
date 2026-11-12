@@ -14,18 +14,24 @@ if (!Directory.Exists(folder))
 List<string> files =
     [.. Directory.EnumerateFiles(folder, "*.txt")];
 
-Console.WriteLine("Digite o Nome a ser procurado:");
-string name = Console.ReadLine()!;
-
-if (files.Count == 0 || string.IsNullOrWhiteSpace(name))
+if (files.Count == 0)
 {
-    Console.WriteLine("Diretório vazio ou nome inválido.");
+    Console.WriteLine("Diretório vazio.");
     return;
 }
+
+Console.WriteLine("Digite o Nome a ser procurado:");
+string? name;
+
+do
+{
+    Console.Write("Digite o nome que procura: ");
+    name = Console.ReadLine();
+} while (string.IsNullOrWhiteSpace(name));
 
 using var cts = new CancellationTokenSource();
 CancellationToken token = cts.Token;
 
-var service = new FindNameOnFileService(files, name);
+var service = new FindNameOnFileService(files, name.Trim());
 
 await service.ExecuteAsync(2, token);
